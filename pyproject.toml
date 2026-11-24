@@ -1,0 +1,34 @@
+[project]
+name = "netghost"
+version = "0.1.0"
+description = "An MCP server providing network diagnostics and Internet intelligence tools for AI agents."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Aniket Mani", email = "aniketmani54@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "dnspython>=2.9.2",
+    "fastmcp>=4.2.5",
+    "psutil>=7.2.2",
+]
+
+[project.scripts]
+netghost = "netghost:main"
+
+[build-system]
+requires = ["uv_build>=0.13.8,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+    "pytest-asyncio>=1.5.0",
+    "pytest-cov>=7.1.0",
+    "ruff>=0.17.6",
+]
+
+[tool.pytest.ini_options]
+asyncio_default_fixture_loop_scope = "function"
