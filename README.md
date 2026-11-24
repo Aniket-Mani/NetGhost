@@ -1,5 +1,11 @@
 # NetGhost
 
+![Python](https://img.shields.io/badge/Python-3.13%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![MCP](https://img.shields.io/badge/Protocol-MCP-8A2BE2?style=for-the-badge)
+![FastMCP](https://img.shields.io/badge/FastMCP-4.x-black?style=for-the-badge)
+![psutil](https://img.shields.io/badge/psutil-7.x-4B8BBE?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+
 NetGhost is a local-first MCP server for network diagnostics. It gives an AI agent structured observations about the host network, DNS, connectivity, routes, active connections, HTTP responses and TLS certificates. It does not scan ports, crawl subdomains, or make reputation or vulnerability claims.
 
 ```mermaid
